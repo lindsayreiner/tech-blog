@@ -5,7 +5,6 @@ const router = require('express').Router();
 
 router.get('/', async (req, res) => {
     res.render('pages/homepage', { logged_in: req.session.logged_in });
-
 });
 
 // router.get('/city', async (req, res) => {
@@ -27,7 +26,11 @@ router.get('/dashboard', async (req, res) => {
 });
 
 router.get('/register', (req, res) => {
-    res.render('pages/register')
+    res.render('partials/register')
+});
+
+router.get('/login', (req, res) => {
+    res.render('partials/login')
 });
 
 

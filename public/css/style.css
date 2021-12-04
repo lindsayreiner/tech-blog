@@ -131,7 +131,7 @@ body > footer {
   }
 
    /* --------------------*/
-  /* Nav                 */
+  /* Nav & Footer         */
   /* --------------------*/
 
   nav {
@@ -178,10 +178,6 @@ body > footer {
     border-bottom: 4px solid var(--tea);
   }
 
-  .title-container {
-    
-  }
-
   .subtitle-container {
     background-color: var(--tea);
     font-weight: 700;
@@ -192,4 +188,33 @@ body > footer {
     background-color: var(--burgundy);
     color: var(--tea);
     padding: 1em;
+  }
+
+   /* --------------------*/
+  /*  Login Page         */
+  /* --------------------*/
+
+  .login,
+  .register {
+    background-color: var(--burgundy);
+    color: var(--tea);
+    font-weight: 700;
+    padding: .5em;
+  }
+
+  .login-container,
+  .register-container {
+    margin: 3em;
+    border: 3px solid var(--burgundy);
+    
+  }
+
+  .credentials-container {
+    padding: 2em;
+  }
+
+  .submit-btn {
+    border-radius: 8px;
+    background-color: var(--button);
+    color: var(--tea);
   }
