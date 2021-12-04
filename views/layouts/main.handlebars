@@ -6,20 +6,20 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <div>
-        <header>
+        <header class="">
+            <nav class="flex flex-column">
 
-            <div class="title-container text-center">
-                <h1 class="title"><a class="brand-home" href="/">The Documentation - A Tech Blog</a></h1>
-
-            </div>
-
-            <nav class="flex flex-column justify-content-center align-items-center">
                 <div>
-                    <ul>
+                    <ul class="nav-list flex flex-row">
                         <li><a class="nav-btn" href="homepage">Home</a></li>
                         <li><a class="nav-btn" href="dashboard">Dashboard</a></li>
                         {{#if logged_in}}
@@ -31,11 +31,15 @@
                         {{#if logged_in}}
                         <li><a class="logout-btn nav-btn">Logout</a></li>
                         {{else}}
-                        <li><a class="login-btn nav-btn" href="homepage#login">Login</a></li>
+                        <li><a class="login-btn nav-btn" href="login">Login</a></li>
                         {{/if}}
                     </ul>
                 </div>
-
+                <div class="title-container">
+                    <h1 class="title"><a class="brand-home" href="/">The Documentation - A Tech
+                            Blog</a>
+                    </h1>
+                </div>
             </nav>
 
             <div class="subtitle-container text-center">
