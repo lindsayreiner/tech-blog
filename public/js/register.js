@@ -5,7 +5,7 @@ const signupHandler = async (e) => {
     const username = document.querySelector('#username').value.trim();
     const password = document.querySelector('#password').value.trim();
 
-
+    console.log(username);
     if (username && password) {
         const response = await fetch('/api/user', {
             method: 'POST',
@@ -21,5 +21,5 @@ const signupHandler = async (e) => {
 
 }
 
-document.querySelector('.credentials-container')
+document.querySelector('.register-container')
 document.addEventListener('submit', signupHandler);
